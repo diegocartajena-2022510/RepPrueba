@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #f4f7f6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0f2e3e;
+    padding: 15px 40px;
+    color: white;
+}
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+#btn-regresar{
+    width: 100px;
+    height: 35px;
+    background-color: #6a8592;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#btn-regresar:hover{
+    background-color: #f6b93b;
+}
+
+table{
+    border-collapse: collapse;
+    width: 90%;
+    margin: 20px auto;
+}
+
+th{
+    padding: 5px;
+    background-color: #0f2e3e;
+    text-align: center;
+    color: white;
+    border-right: 1px solid black;
+    
+}
+td{
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid black;
+}
+td:hover{
+    background-color:#C4C4C4;
+}
+td:last-child {
+    border-right: none;
+}
+.btn-editar-tabla{
+    background-color: #f6b93b;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-top:50px;
+    text-decoration: none;
+    font-weight:bolder;
+}
+.btn-editar-tabla:hover{
+    background-color: rgb(255, 153, 0);
+}
+
+.btn-eliminar-tabla{
+    background-color: rgb(207, 33, 33);
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top:50px;
+    text-decoration: none;
+    font-weight:bolder;
+}
+.btn-eliminar-tabla:hover{
+    background-color: rgb(255, 17, 17);
+}
+.btn-crud{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 90px;
+}
+.agregar{
+    background-color: #0f2e3e;
+    margin-right: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px 5px;
+    
+}
+.agregar svg{
+    color: #f4f7f6;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    transform: translate(10px, 3px);
+}
+.agregar:hover, .editar:hover{
+    background-color: #545f64;
+    color: #f6b93b;
+}   
+.editar{
+    background-color: #0f2e3e;
+    margin-right: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px 5px;
+}
+.editar svg{
+    color: #f4f7f6;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    transform: translate(10px, 1px);
+}
+.btn-crud a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.crud{
+    display: flex;
+    justify-content: center;
+    transform: translateY(-400px);
+}
+
+.modal-content{
+    background-color: #0f2e3e;
+    padding: 25px 55px;
+    font-size: 30px;
+    border-radius: 15px;
+    color: #f4f7f6;
+}
+.modal-content input{
+    width: 70%;
+    height: 30px;
+    background-color: #637b86;
+    border-radius: 5px;
+    border: none;
+    color: #f4f7f6;
+    font-size:20px ;
+}
+.modal-content h2{
+    border-bottom: 5px groove #f6b93b;
+    transform: translateY(-45px);
+}
+.modal-content button{
+    display: flex;
+    background-color: #f6b93b;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 25px;
+    transform: translate(0px 50px);
+}
+.modal-content button:hover{
+    background-color: #f0d195;
+}
+.close{
+    display: flex;
+    font-size: 60px;
+    color: #f4f7f6;
+    transform: translate(50px, -35px);
+    text-decoration: none;
+    justify-content: flex-end;
+}
